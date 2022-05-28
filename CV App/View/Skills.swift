@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct Skills: View {
+    
+    var skills = skill
+    
     var body: some View {
         ZStack{
             VStack{
@@ -16,8 +19,8 @@ struct Skills: View {
                 SearchBar()
                     .padding()
                 List{
-                    ForEach (0...30, id: \.self) { i in
-                        Text("\(i)")
+                    ForEach(skills, id: \.self) { skill in
+                        Text("\(skill)")
                     }
                 }
             }

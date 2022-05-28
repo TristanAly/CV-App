@@ -18,6 +18,7 @@
 		6220187628428F570046C685 /* Study.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220187528428F570046C685 /* Study.swift */; };
 		62201878284294720046C685 /* Projet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62201877284294720046C685 /* Projet.swift */; };
 		6220187A284294890046C685 /* DetailStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62201879284294890046C685 /* DetailStudy.swift */; };
+		6220187D28429B090046C685 /* DataSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220187C28429B090046C685 /* DataSkill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		6220187528428F570046C685 /* Study.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study.swift; sourceTree = "<group>"; };
 		62201877284294720046C685 /* Projet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projet.swift; sourceTree = "<group>"; };
 		62201879284294890046C685 /* DetailStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStudy.swift; sourceTree = "<group>"; };
+		6220187C28429B090046C685 /* DataSkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSkill.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		6220187B2842980E0046C685 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6220187C28429B090046C685 /* DataSkill.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				620DCCEF283EC0D700EBA197 /* ContentView.swift in Sources */,
 				6220186D28427D700046C685 /* Home.swift in Sources */,
 				620DCCED283EC0D700EBA197 /* CV_AppApp.swift in Sources */,
+				6220187D28429B090046C685 /* DataSkill.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

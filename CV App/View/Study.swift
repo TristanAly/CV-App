@@ -81,7 +81,7 @@ struct Study: View {
                 }
             }
             Spacer()
-        }
+        }.navigationBarTitleDisplayMode(.inline)
     }
 }
 

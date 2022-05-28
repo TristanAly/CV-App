@@ -45,18 +45,7 @@ struct SecondView: View {
                             .fill(.blue)
                             .frame(width: .infinity, height: 100)
                             .overlay(
-                        Text( "Formation")
-                            .font(.title)
-                            .foregroundColor(.black))
-                    }
-                    NavigationLink{
-                        Skills()
-                    }label: {
-                        Rectangle()
-                            .fill(.blue)
-                            .frame(width: .infinity, height: 100)
-                            .overlay(
-                        Text( "Experience")
+                        Text( "Mon Parcours")
                             .font(.title)
                             .foregroundColor(.black))
                     }
