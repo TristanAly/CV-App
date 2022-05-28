@@ -39,7 +39,7 @@ struct SecondView: View {
                         .foregroundColor(.black))
                 }
                     NavigationLink{
-                        Study()
+                        Study(studys: experience[0])
                     }label: {
                         Rectangle()
                             .fill(.blue)

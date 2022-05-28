@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct Study: View {
+    
+    var studys: GetInfo
+    
     var body: some View {
+        NavigationView{
         VStack{
             HStack{
                 Circle()
@@ -35,58 +39,32 @@ struct Study: View {
                     .frame(width: 150, height: 40)
                     .overlay(
                 Text("Experience"))
-            }
+            }.padding()
             Spacer()
             ScrollView(.horizontal ,showsIndicators: false){
-                HStack(spacing: 100){
+                HStack(spacing: 95){
                     Spacer()
-                    VStack(alignment: .center){
-                    RoundedRectangle(cornerRadius: 10)
-                            .stroke()
-
-                        .frame(width: 200, height: 160)
-                        Text("ffffffffff")
-                        Text("ffffffffff")
-                        Text("ffffffffff")
-                }
-                    
-                    VStack(alignment: .center){
-                    RoundedRectangle(cornerRadius: 10)
-                            .stroke()
-                        .frame(width: 200, height: 160)
-                        Text("ffffffffff")
-                        Text("ffffffffff")
-                        Text("ffffffffff")
-                }
-                    VStack(alignment: .center){
-                    RoundedRectangle(cornerRadius: 10)
-                            .stroke()
-
-                        .frame(width: 200, height: 160)
-                        Text("ffffffffff")
-                        Text("ffffffffff")
-                        Text("ffffffffff")
-                }
-                    
-                    VStack(alignment: .center){
-                    RoundedRectangle(cornerRadius: 10)
-                            .stroke()
-
-                        .frame(width: 200, height: 160)
-                        Text("ffffffffff")
-                        Text("ffffffffff")
-                        Text("ffffffffff")
-                }
+                ForEach(experience, id: \.title) { study in
+                    NavigationLink{
+                        DetailStudy(studys: study)
+                    } label: {
+                        ScrollStudy(studys: study)
+                    }
+                    }
                     Spacer()
                 }
-            }
+                   
+                }
+                
+           
             Spacer()
         }.navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 
 struct Study_Previews: PreviewProvider {
     static var previews: some View {
-        Study()
+        Study(studys: experience[0])
     }
 }
