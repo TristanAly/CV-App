@@ -22,16 +22,8 @@ struct DetailStudy: View {
                 .overlay(
                     Text("Compétences"))
                 .padding()
-            ScrollView{
-            ForEach(0...9, id: \.self) { i in
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke()
-                    .frame(width: .infinity, height: 50)
-                    .overlay(Text("\(i)fffffffffffffffffffffffffffffff")
-                        .padding())
-            }
-            }
         }.padding()
+            .navigationBarTitleDisplayMode(.inline)
     }
 }
 

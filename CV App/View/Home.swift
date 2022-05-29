@@ -25,13 +25,20 @@ struct Home: View {
                         Circle()
                             .frame(width: 200, height: 200)
                         Text("ALY TRISTAN")
+                            .font(.system(size: 30,weight: .bold))
                             .padding()
-                        
-                        Text("Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ")
-                            .frame(width: 300, height: 180)
-                            .multilineTextAlignment(.leading)
+                      
+                        Text("""
+                        Autodidacte et passionnée, je recherche une alternance de 2 ans.
+                        Motivé, curieux je ferais preuve de toute mon implication pour mener à bien vos projets.
+                        Bonne capacité d'adaptation de par mes experiences je vous apporterais mon sens de l'organisation et ma polyvalence
+                        """
+                        ).multilineTextAlignment(.leading)
+                            .lineLimit(8)
+                            .padding()
+                            
                         Spacer()
-                    })
+                    }).foregroundColor(.white)
                 .clipShape(LiquidSwipe(offset: offset))
                 .edgesIgnoringSafeArea(.all)
             
@@ -72,7 +79,7 @@ struct Home: View {
 //                    .font(.largeTitle)
 //                    .fontWeight(.heavy)
                 SecondView()
-                    .animation(.easeIn(duration: 0.25))
+                
 //                    .onTapGesture {
 //                        withAnimation(.spring()){
 //                            offset = .zero

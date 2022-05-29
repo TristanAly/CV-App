@@ -22,6 +22,7 @@
 		6220187F2842AA390046C685 /* ScrollStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220187E2842AA390046C685 /* ScrollStudy.swift */; };
 		6226E10728437CF100F840AE /* DetailExpe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226E10628437CF100F840AE /* DetailExpe.swift */; };
 		6226E10928437E0000F840AE /* ScrollExpe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226E10828437E0000F840AE /* ScrollExpe.swift */; };
+		6226E10B284391FD00F840AE /* MonProfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226E10A284391FD00F840AE /* MonProfil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		6220187E2842AA390046C685 /* ScrollStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollStudy.swift; sourceTree = "<group>"; };
 		6226E10628437CF100F840AE /* DetailExpe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExpe.swift; sourceTree = "<group>"; };
 		6226E10828437E0000F840AE /* ScrollExpe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollExpe.swift; sourceTree = "<group>"; };
+		6226E10A284391FD00F840AE /* MonProfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonProfil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				6220186C28427D700046C685 /* Home.swift */,
 				62201871284283980046C685 /* SecondView.swift */,
+				6226E10A284391FD00F840AE /* MonProfil.swift */,
 				6220186F284280540046C685 /* LiquidSwipe.swift */,
 				62201873284286500046C685 /* Skills.swift */,
 				6220187528428F570046C685 /* Study.swift */,
@@ -190,6 +193,7 @@
 				6220187A284294890046C685 /* DetailStudy.swift in Sources */,
 				62201870284280540046C685 /* LiquidSwipe.swift in Sources */,
 				62201874284286500046C685 /* Skills.swift in Sources */,
+				6226E10B284391FD00F840AE /* MonProfil.swift in Sources */,
 				62201872284283980046C685 /* SecondView.swift in Sources */,
 				62201878284294720046C685 /* Projet.swift in Sources */,
 				6220187628428F570046C685 /* Study.swift in Sources */,

@@ -13,22 +13,25 @@ struct ScrollExpe: View {
         HStack{
             VStack(alignment: .center){
                 Image(expe.image)
-                .resizable()
-                .frame(width: 200, height: 180)
-                .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .resizable()
+                    .frame(width: 200, height: 160)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .shadow(color: .black, radius: 3, x: 3, y: 4)
                 VStack{
-                Text(expe.title)
-                Text(expe.location)
-                Text(expe.date)
-                Text(expe.resume)
+                    Text(expe.level)
+                        .bold()
+                    Text("Année: \(expe.date)")
+                    Text(expe.title)
+                    Text(expe.location)
+                    Text(expe.resume)
                 }.padding()
-        }
-        }
+            }
+        }.frame(width: 250, height: 350)
     }
 }
 
 struct ScrollExpe_Previews: PreviewProvider {
     static var previews: some View {
-        ScrollExpe(expe: formation[0])
+        ScrollExpe(expe: formation[1])
     }
 }

@@ -9,30 +9,22 @@ import SwiftUI
 
 struct SecondView: View {
     var body: some View {
-        NavigationView{
+        
         VStack{
-            HStack{
-                Circle()
-                    .frame(width: 200, height: 200)
-                Spacer()
-                VStack(alignment: .leading ,spacing: 20){
-            Text("Tristan ALY")
-                .font(.title)
-                    Text("github")
-                    Text("LinkedIn")
-                }
-            }.padding()
-            Text("Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum")
-                
-                .multilineTextAlignment(.leading)
-            ScrollView{
+          MonProfil()
+            Text("""
+Autodidacte et passionnée, je recherche une alternance de 2 ans.
+Motivé, curieux je ferais preuve de toute mon implication pour mener à bien vos projets.
+""")
+            .padding(.top,0)
                 VStack{
+                    Spacer()
                 NavigationLink{
-                    Skills()
+                    Skills(search: "", searchText: false)
                 }label: {
-                    Rectangle()
+                    RoundedRectangle(cornerRadius: 10)
                         .fill(.blue)
-                        .frame(width: 350, height: 100)
+                        .frame(width: 350, height: 70)
                         .overlay(
                     Text( "Competences")
                         .font(.title)
@@ -41,41 +33,41 @@ struct SecondView: View {
                     NavigationLink{
                         Study(studys: experience[0],expe: formation[0])
                     }label: {
-                        Rectangle()
+                        RoundedRectangle(cornerRadius: 10)
                             .fill(.blue)
-                            .frame(width: 350, height: 100)
+                            .frame(width: 350, height: 70)
                             .overlay(
                         Text( "Mon Parcours")
                             .font(.title)
                             .foregroundColor(.black))
                     }
                     NavigationLink{
-                        Skills()
+                        Skills(search: "", searchText: false)
                     }label: {
-                        Rectangle()
+                        RoundedRectangle(cornerRadius: 10)
                             .fill(.blue)
-                            .frame(width: 350, height: 100)
+                            .frame(width: 350, height: 70)
                             .overlay(
                         Text( "Projet")
                             .font(.title)
                             .foregroundColor(.black))
                     }
                     NavigationLink{
-                        Skills()
+                        Skills(search: "", searchText: false)
                     }label: {
-                        Rectangle()
+                        RoundedRectangle(cornerRadius: 10)
                             .fill(.blue)
-                            .frame(width: 350, height: 100)
+                            .frame(width: 350, height: 70)
                             .overlay(
                         Text( "Centre d'intérêt")
                             .font(.title)
                             .foregroundColor(.black))
                     }
-                   
+                    Spacer()
                 }
-            }
+            
         }.navigationBarHidden(true)
-        }
+        
     }
 }
 

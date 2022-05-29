@@ -15,24 +15,25 @@ struct ScrollStudy: View {
     var body: some View {
         HStack{
             VStack(alignment: .center){
-                Image("logo")
+                Image(studys.image)
                 .resizable()
                 .frame(width: 200, height: 160)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
+                .shadow(color: .black, radius: 3, x: 3, y: 4)
                 VStack{
-                Text(studys.title)
-                Text(studys.location)
-                Text(studys.date)
-                Text(studys.resume)
+                    Text("Année: \(studys.date)")
+                    Text(studys.title)
+                    Text(studys.location)
+                    Text(studys.resume)
                 }.padding()
         }
-        }
+        }.frame(width: 250, height: 350)
     }
 }
 
 struct ScrollStudy_Previews: PreviewProvider {
     static var previews: some View {
         ScrollStudy(studys: experience[0])
-            .previewLayout(.sizeThatFits)
+            
     }
 }

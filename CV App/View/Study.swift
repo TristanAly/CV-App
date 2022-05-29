@@ -16,47 +16,19 @@ struct Study: View {
     var two = ["Experience", "Formation"]
     
     var body: some View {
-        NavigationView{
+       
         VStack{
-            HStack{
-                Circle()
-                    .frame(width: 200, height: 200)
-                Spacer()
-                VStack(alignment: .leading ,spacing: 20){
-            Text("Tristan ALY")
-                .font(.title)
-                    Text("github")
-                    Text("LinkedIn")
-                }
-            }.padding()
-            Text("Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum")
-                
-                .multilineTextAlignment(.leading)
-//            HStack{
-//            RoundedRectangle(cornerRadius: 5)
-//                .fill(.blue)
-//                .frame(width: 150, height: 40)
-//                .overlay(
-//            Text("Formation"))
-//                RoundedRectangle(cornerRadius: 5)
-//                    .fill(.blue)
-//                    .frame(width: 150, height: 40)
-//                    .overlay(
-//                Text("Experience"))
-//            }.padding()
+           MonProfil()
             VStack{
                 Picker("test", selection: $Categorie) {
                     Text("experience").tag(0)
                     Text("formation").tag(1)
-//                    ForEach(two, id: \.self) {
-//                        Text($0)
-//                    }
                 }.pickerStyle(.segmented)
             }
             Spacer()
             if (Categorie == 0) {
             ScrollView(.horizontal ,showsIndicators: false){
-                HStack(spacing: 95){
+                HStack(spacing: 80){
                     Spacer()
                 ForEach(experience, id: \.title) { study in
                     NavigationLink{
@@ -70,7 +42,7 @@ struct Study: View {
                 }
             } else {
                 ScrollView(.horizontal ,showsIndicators: false){
-                    HStack(spacing: 95){
+                    HStack(spacing: 80){
                         Spacer()
                     ForEach(formation, id: \.title) { exper in
                         NavigationLink{
@@ -86,8 +58,6 @@ struct Study: View {
            
             Spacer()
         }.navigationBarTitleDisplayMode(.inline)
-                .navigationBarHidden(true)
-        }
     }
 }
 

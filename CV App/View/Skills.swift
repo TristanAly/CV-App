@@ -10,17 +10,35 @@ import SwiftUI
 struct Skills: View {
     
     var skills = skill
+    @State var search: String
+    @State var searchText: Bool
     
     var body: some View {
         ZStack{
-            VStack{
-                Text("Mes Competences")
-                    .font(.largeTitle)
-                SearchBar()
+            VStack(alignment: .trailing){
+                SearchBar(search: $search, searchText: $searchText)
                     .padding()
                 List{
-                    ForEach(skills, id: \.self) { skill in
-                        Text("\(skill)")
+                    ForEach(skills.filter({ (skill: String) -> Bool in
+                        return skill.hasPrefix(search) || search ==   ""
+                    }), id: \.self) { skill in
+                        Text(skill)
+                        
+                    }
+                    
+                }
+                .listStyle(InsetListStyle())
+                
+                .navigationBarTitle(searchText ? "Searching" : "Mes Competences")
+                .toolbar {
+                    if searchText {
+                        Button("Cancel") {
+                            search = ""
+                            withAnimation{
+                                searchText = false
+                                
+                            }
+                        }
                     }
                 }
             }
@@ -28,38 +46,49 @@ struct Skills: View {
     }
 }
 
-
 struct Skills_Previews: PreviewProvider {
     static var previews: some View {
         
-            Skills()
+        Skills(search: "", searchText: false)
     }
 }
 
 
 struct SearchBar: View {
     
-    @State var search = ""
+    @Binding var search: String
+    @Binding var searchText: Bool
     
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 10)
                 .fill(.gray.opacity(0.2))
                 .frame(width: 380, height: 40)
-                .overlay(
-                    HStack{
-                        Image(systemName: "magnifyingglass")
-                TextField("search..", text: $search)
-                    .padding()
-                    }.padding()
-                )
-            }
+            
+            HStack{
+                Image(systemName: "magnifyingglass")
+                TextField("search..", text: $search){
+                    startedSearching in
+                    if startedSearching {
+                        withAnimation{
+                            searchText = true
+                        }
+                    }
+                } onCommit: {
+                    withAnimation{
+                        searchText  = false
+                    }
+                }
+                .padding()
+            }.padding()
+            
         }
     }
+}
 
 struct SearchBar_Previews: PreviewProvider {
     static var previews: some View {
-        SearchBar()
-           .previewLayout(.sizeThatFits)
+        SearchBar(search: .constant(""), searchText: .constant(false))
+            .previewLayout(.sizeThatFits)
     }
 }
