@@ -20,10 +20,10 @@ let experience = [
                   GetInfo(image: "heart.fill", title: "Hotel Shangri La", date: "2016 / 2018", location: "Paris, France", resume: "Un palace parisien"),
                   GetInfo(image: "heart.fill", title: "Hotel Shangri La", date: "2016 / 2018", location: "Paris, France", resume: "Un palace parisien"),
 ]
-let formation = [GetInfo(image: "heart.fill", title: "Simplon.co", date: "2022", location: "Montreuil, France", resume: "Un palace parisien"),
-                  GetInfo(image: "heart.fill", title: "Hotel Shangri La", date: "2016 / 2018", location: "Paris, France", resume: "Un palace parisien"),
-                  GetInfo(image: "heart.fill", title: "Hotel Shangri La", date: "2016 / 2018", location: "Paris, France", resume: "Un palace parisien"),
-                  GetInfo(image: "heart.fill", title: "Hotel Shangri La", date: "2016 / 2018", location: "Paris, France", resume: "Un palace parisien"),
+let formation = [GetInfo(image: "simplon", title: "Simplon.co", date: "2022", location: "Montreuil, France", resume: "Un palace parisien"),
+                  GetInfo(image: "logo", title: "Hotel Shangri La", date: "2016 / 2018", location: "Paris, France", resume: "Un palace parisien"),
+                  GetInfo(image: "logo", title: "Hotel Shangri La", date: "2016 / 2018", location: "Paris, France", resume: "Un palace parisien"),
+                  GetInfo(image: "logo", title: "Hotel Shangri La", date: "2016 / 2018", location: "Paris, France", resume: "Un palace parisien"),
 ]
 
 

@@ -32,18 +32,18 @@ struct SecondView: View {
                 }label: {
                     Rectangle()
                         .fill(.blue)
-                        .frame(width: .infinity, height: 100)
+                        .frame(width: 350, height: 100)
                         .overlay(
                     Text( "Competences")
                         .font(.title)
                         .foregroundColor(.black))
                 }
                     NavigationLink{
-                        Study(studys: experience[0])
+                        Study(studys: experience[0],expe: formation[0])
                     }label: {
                         Rectangle()
                             .fill(.blue)
-                            .frame(width: .infinity, height: 100)
+                            .frame(width: 350, height: 100)
                             .overlay(
                         Text( "Mon Parcours")
                             .font(.title)
@@ -54,7 +54,7 @@ struct SecondView: View {
                     }label: {
                         Rectangle()
                             .fill(.blue)
-                            .frame(width: .infinity, height: 100)
+                            .frame(width: 350, height: 100)
                             .overlay(
                         Text( "Projet")
                             .font(.title)
@@ -65,7 +65,7 @@ struct SecondView: View {
                     }label: {
                         Rectangle()
                             .fill(.blue)
-                            .frame(width: .infinity, height: 100)
+                            .frame(width: 350, height: 100)
                             .overlay(
                         Text( "Centre d'intérêt")
                             .font(.title)

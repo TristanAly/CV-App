@@ -11,6 +11,7 @@ struct ScrollStudy: View {
     
     var studys: GetInfo
     
+    
     var body: some View {
         HStack{
             VStack(alignment: .center){
@@ -18,12 +19,14 @@ struct ScrollStudy: View {
                 .resizable()
                 .frame(width: 200, height: 160)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
+                VStack{
                 Text(studys.title)
                 Text(studys.location)
                 Text(studys.date)
                 Text(studys.resume)
+                }.padding()
         }
-        }.background(.blue)
+        }
     }
 }
 
