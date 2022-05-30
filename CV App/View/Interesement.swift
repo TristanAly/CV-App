@@ -15,6 +15,7 @@ struct Interesement: View {
             ScrollView{
                 VStack(alignment: .leading, spacing: 50){
                     Text("Mes auteurs préferés:")
+                        .underline()
                         .bold()
                         .font(.title2)
                     VStack{
@@ -46,6 +47,7 @@ struct Interesement: View {
                     }.padding()
                     
                     Text("Jeux FPS compétitive: ")
+                        .underline()
                         .bold()
                         .font(.title2)
                     VStack{
@@ -60,6 +62,7 @@ struct Interesement: View {
                             .font(.title2)
                     }
                     Text("Musculation")
+                        .underline()
                         .bold()
                         .font(.title2)
                        
