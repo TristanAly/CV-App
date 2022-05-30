@@ -12,16 +12,23 @@ struct DetailStudy: View {
     var studys: GetInfo
     
     var body: some View {
-        VStack{
+        VStack(alignment: .leading){
             Image(studys.image)
                 .frame(width: 340, height: 150)
             Text(studys.resume)
-            RoundedRectangle(cornerRadius: 5)
-                .fill(.blue)
-                .frame(width: 150, height: 40)
-                .overlay(
-                    Text("Compétences"))
                 .padding()
+            Text("Compétences acquises:")
+                .bold()
+                .font(.title2)
+                .underline()
+            VStack(alignment: .leading, spacing: 20){
+                Text(studys.competence)
+                Text(studys.competence1)
+                Text(studys.competence2)
+                Text(studys.competence3)
+                Text(studys.competence4)
+                Text(studys.competence5)
+            } .padding()
         }.padding()
             .navigationBarTitleDisplayMode(.inline)
     }

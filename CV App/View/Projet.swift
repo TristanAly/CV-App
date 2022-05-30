@@ -8,37 +8,20 @@
 import SwiftUI
 
 struct Projet: View {
+    
+    
+    
     var body: some View {
         ZStack{
-            Color.blue.opacity(0.4)
+            Color.gray.opacity(0.04)
                 .edgesIgnoringSafeArea(.all)
-        ScrollView{
-        VStack{
-            Text("Projet 1")
-            Text("Lorem ipsumAutodidacte et passionnée, je recherche une alternance de 2 ans. Motivé, curieux je ferais preuve de toute mon implication pour mener à bien vos projets.")
-            HStack{
-            Image("profil").resizable()
-                .frame(width: 150, height: 150)
-                Image("profil").resizable()
-                    .frame(width: 150, height: 150)
+            VStack{
+                ScrollView{
+            ForEach(contenu, id: \.title) { contenu in
+               ModelProjet(contenus: contenu)
+                }
+                }
             }
-            Divider()
-            Text("Projet 2")
-            Text("Lorem ipsumAutodidacte et passionnée, je recherche une alternance de 2 ans. Motivé, curieux je ferais preuve de toute mon implication pour mener à bien vos projets.")
-            HStack{
-            Image("profil").resizable()
-                .frame(width: 150, height: 150)
-                Image("profil").resizable()
-                    .frame(width: 150, height: 150)
-            }
-            Divider()
-            
-            
-            Text("Projet 1")
-            Text("Lorem ipsumAutodidacte et passionnée, je recherche une alternance de 2 ans. Motivé, curieux je ferais preuve de toute mon implication pour mener à bien vos projets.")
-            
-        }.padding()
-        }
         }
     }
 }

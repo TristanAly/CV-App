@@ -8,19 +8,28 @@
 import SwiftUI
 
 struct DetailExpe: View {
+    
     var expe: GetInfo
+    
     var body: some View {
-        VStack{
+        VStack(alignment: .leading){
             Image(expe.image)
                 .frame(width: 340, height: 150)
             Text(expe.resume)
-            RoundedRectangle(cornerRadius: 5)
-                .fill(.blue)
-                .frame(width: 150, height: 40)
-                .overlay(
-                    Text("Compétences"))
                 .padding()
-        }.padding()
+            Text("Compétences acquises:")
+                .bold()
+                .font(.title2)
+                .underline()
+            VStack(alignment: .leading, spacing: 20){
+                Text(expe.competence)
+                Text(expe.competence1)
+                Text(expe.competence2)
+                Text(expe.competence3)
+                Text(expe.competence4)
+                Text(expe.competence5)
+            } .padding()
+        } .padding()
             .navigationBarTitleDisplayMode(.inline)
     }
 }
