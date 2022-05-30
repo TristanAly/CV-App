@@ -12,9 +12,13 @@ struct DetailExpe: View {
     var expe: GetInfo
     
     var body: some View {
+        ZStack{
+            Color.gray.opacity(0.04)
+                .edgesIgnoringSafeArea(.all)
         VStack(alignment: .leading){
             Image(expe.image)
                 .frame(width: 340, height: 150)
+                
             Text(expe.resume)
                 .padding()
             Text("Compétences acquises:")
@@ -30,7 +34,8 @@ struct DetailExpe: View {
                 Text(expe.competence5)
             } .padding()
         } .padding()
-            .navigationBarTitleDisplayMode(.inline)
+        
+        }.navigationBarTitleDisplayMode(.inline)
     }
 }
 

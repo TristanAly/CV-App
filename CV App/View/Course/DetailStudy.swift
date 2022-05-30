@@ -12,6 +12,9 @@ struct DetailStudy: View {
     var studys: GetInfo
     
     var body: some View {
+        ZStack{
+            Color.gray.opacity(0.04)
+                .edgesIgnoringSafeArea(.all)
         VStack(alignment: .leading){
             Image(studys.image)
                 .frame(width: 340, height: 150)
@@ -30,7 +33,7 @@ struct DetailStudy: View {
                 Text(studys.competence5)
             } .padding()
         }.padding()
-            .navigationBarTitleDisplayMode(.inline)
+        }    .navigationBarTitleDisplayMode(.inline)
     }
 }
 
