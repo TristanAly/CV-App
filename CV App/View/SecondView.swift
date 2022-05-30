@@ -9,6 +9,9 @@ import SwiftUI
 
 struct SecondView: View {
     var body: some View {
+        ZStack{
+            Color.gray.opacity(0.3)
+                .edgesIgnoringSafeArea(.all)
         
         VStack{
           MonProfil()
@@ -23,7 +26,7 @@ Motivé, curieux je ferais preuve de toute mon implication pour mener à bien vo
                     Skills(search: "", searchText: false)
                 }label: {
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(.blue)
+                        .fill(.blue.opacity(0.4))
                         .frame(width: 350, height: 70)
                         .overlay(
                     Text( "Competences")
@@ -34,29 +37,30 @@ Motivé, curieux je ferais preuve de toute mon implication pour mener à bien vo
                         Study(studys: experience[0],expe: formation[0])
                     }label: {
                         RoundedRectangle(cornerRadius: 10)
-                            .fill(.blue)
+                            .fill(.blue.opacity(0.4))
                             .frame(width: 350, height: 70)
                             .overlay(
                         Text( "Mon Parcours")
                             .font(.title)
-                            .foregroundColor(.black))
+                            .foregroundColor(.black)
+                            )
                     }
                     NavigationLink{
-                        Skills(search: "", searchText: false)
+                        Projet()
                     }label: {
                         RoundedRectangle(cornerRadius: 10)
-                            .fill(.blue)
+                            .fill(.blue.opacity(0.4))
                             .frame(width: 350, height: 70)
                             .overlay(
-                        Text( "Projet")
+                        Text( "Mon PortFolio")
                             .font(.title)
                             .foregroundColor(.black))
                     }
                     NavigationLink{
-                        Skills(search: "", searchText: false)
+                        Interesement()
                     }label: {
                         RoundedRectangle(cornerRadius: 10)
-                            .fill(.blue)
+                            .fill(.blue.opacity(0.4))
                             .frame(width: 350, height: 70)
                             .overlay(
                         Text( "Centre d'intérêt")
@@ -67,7 +71,7 @@ Motivé, curieux je ferais preuve de toute mon implication pour mener à bien vo
                 }
             
         }.navigationBarHidden(true)
-        
+        }
     }
 }
 

@@ -18,7 +18,10 @@ struct Study: View {
     var body: some View {
        
         VStack{
+            ZStack{
+                Color.blue.opacity(0.4).edgesIgnoringSafeArea(.all)
            MonProfil()
+            }
             VStack{
                 Picker("test", selection: $Categorie) {
                     Text("experience").tag(0)
@@ -26,6 +29,7 @@ struct Study: View {
                 }.pickerStyle(.segmented)
             }
             Spacer()
+           
             if (Categorie == 0) {
             ScrollView(.horizontal ,showsIndicators: false){
                 HStack(spacing: 80){
@@ -55,9 +59,12 @@ struct Study: View {
                     }
                     }
             }
+            
            
             Spacer()
         }.navigationBarTitleDisplayMode(.inline)
+        
+        
     }
 }
 

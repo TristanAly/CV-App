@@ -20,12 +20,14 @@ struct ScrollStudy: View {
                 .frame(width: 200, height: 160)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .shadow(color: .black, radius: 3, x: 3, y: 4)
-                VStack{
+                VStack(spacing: 20){
                     Text("Année: \(studys.date)")
                     Text(studys.title)
-                    Text(studys.location)
-                    Text(studys.resume)
+                        .bold()
+                    Text("📍\(studys.location)")
+                    
                 }.padding()
+                    .foregroundColor(.black)
         }
         }.frame(width: 250, height: 350)
     }

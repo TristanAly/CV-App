@@ -20,6 +20,7 @@
 		6220187A284294890046C685 /* DetailStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62201879284294890046C685 /* DetailStudy.swift */; };
 		6220187D28429B090046C685 /* DataSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220187C28429B090046C685 /* DataSkill.swift */; };
 		6220187F2842AA390046C685 /* ScrollStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220187E2842AA390046C685 /* ScrollStudy.swift */; };
+		6220AF352844A20200DAA409 /* Interesement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220AF342844A20200DAA409 /* Interesement.swift */; };
 		6226E10728437CF100F840AE /* DetailExpe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226E10628437CF100F840AE /* DetailExpe.swift */; };
 		6226E10928437E0000F840AE /* ScrollExpe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226E10828437E0000F840AE /* ScrollExpe.swift */; };
 		6226E10B284391FD00F840AE /* MonProfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226E10A284391FD00F840AE /* MonProfil.swift */; };
@@ -40,6 +41,7 @@
 		62201879284294890046C685 /* DetailStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStudy.swift; sourceTree = "<group>"; };
 		6220187C28429B090046C685 /* DataSkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSkill.swift; sourceTree = "<group>"; };
 		6220187E2842AA390046C685 /* ScrollStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollStudy.swift; sourceTree = "<group>"; };
+		6220AF342844A20200DAA409 /* Interesement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interesement.swift; sourceTree = "<group>"; };
 		6226E10628437CF100F840AE /* DetailExpe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExpe.swift; sourceTree = "<group>"; };
 		6226E10828437E0000F840AE /* ScrollExpe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollExpe.swift; sourceTree = "<group>"; };
 		6226E10A284391FD00F840AE /* MonProfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonProfil.swift; sourceTree = "<group>"; };
@@ -96,17 +98,14 @@
 		6220186E28427D800046C685 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6220186F284280540046C685 /* LiquidSwipe.swift */,
 				6220186C28427D700046C685 /* Home.swift */,
 				62201871284283980046C685 /* SecondView.swift */,
 				6226E10A284391FD00F840AE /* MonProfil.swift */,
-				6220186F284280540046C685 /* LiquidSwipe.swift */,
+				6220AF362844B52300DAA409 /* Course */,
 				62201873284286500046C685 /* Skills.swift */,
-				6220187528428F570046C685 /* Study.swift */,
-				6220187E2842AA390046C685 /* ScrollStudy.swift */,
 				62201877284294720046C685 /* Projet.swift */,
-				6226E10828437E0000F840AE /* ScrollExpe.swift */,
-				62201879284294890046C685 /* DetailStudy.swift */,
-				6226E10628437CF100F840AE /* DetailExpe.swift */,
+				6220AF342844A20200DAA409 /* Interesement.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -117,6 +116,18 @@
 				6220187C28429B090046C685 /* DataSkill.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6220AF362844B52300DAA409 /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				62201879284294890046C685 /* DetailStudy.swift */,
+				6220187528428F570046C685 /* Study.swift */,
+				6220187E2842AA390046C685 /* ScrollStudy.swift */,
+				6226E10828437E0000F840AE /* ScrollExpe.swift */,
+				6226E10628437CF100F840AE /* DetailExpe.swift */,
+			);
+			path = Course;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +202,7 @@
 			files = (
 				6226E10728437CF100F840AE /* DetailExpe.swift in Sources */,
 				6220187A284294890046C685 /* DetailStudy.swift in Sources */,
+				6220AF352844A20200DAA409 /* Interesement.swift in Sources */,
 				62201870284280540046C685 /* LiquidSwipe.swift in Sources */,
 				62201874284286500046C685 /* Skills.swift in Sources */,
 				6226E10B284391FD00F840AE /* MonProfil.swift in Sources */,

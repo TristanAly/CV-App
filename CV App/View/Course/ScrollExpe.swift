@@ -17,14 +17,15 @@ struct ScrollExpe: View {
                     .frame(width: 200, height: 160)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                     .shadow(color: .black, radius: 3, x: 3, y: 4)
-                VStack{
+                VStack(spacing: 10){
                     Text(expe.level)
                         .bold()
                     Text("Année: \(expe.date)")
                     Text(expe.title)
-                    Text(expe.location)
-                    Text(expe.resume)
+                        .bold()
+                    Text("📍\(expe.location)")
                 }.padding()
+                    .foregroundColor(.black)
             }
         }.frame(width: 250, height: 350)
     }

@@ -11,8 +11,13 @@ struct MonProfil: View {
     var body: some View {
         VStack{
             HStack{
-                Circle()
+                ZStack{
+                    Border()
+                Image("profil")
+                    .resizable()
                     .frame(width: 200, height: 200)
+                    
+                }
                 Spacer()
                 VStack(alignment: .center,spacing: 20){
                     Text("Tristan ALY")
@@ -32,6 +37,7 @@ struct MonProfil: View {
                 .bold()
             .padding()
         }
+        
     }
 }
 
@@ -40,3 +46,11 @@ struct MonProfil_Previews: PreviewProvider {
         MonProfil()
     }
 }
+
+    
+    func Border() -> some View {
+        Circle()
+            .stroke(.black, lineWidth: 5)
+            .frame(width: 200, height: 200)
+    }
+

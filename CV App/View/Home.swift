@@ -17,25 +17,25 @@ struct Home: View {
         ZStack{
             Color.blue
                 .overlay(
-                    VStack(spacing: 10){
+                    VStack(alignment: .center, spacing: 20){
                         Spacer()
                         Text("Welcome to my CV")
                             .font(.largeTitle)
                         Spacer()
-                        Circle()
-                            .frame(width: 200, height: 200)
+                        ZStack{
+                        Border()
+                        Image("profil")
+                            .resizable()
+                            .frame(width: 200, height: 200)}
                         Text("ALY TRISTAN")
                             .font(.system(size: 30,weight: .bold))
                             .padding()
-                      
-                        Text("""
-                        Autodidacte et passionnée, je recherche une alternance de 2 ans.
-                        Motivé, curieux je ferais preuve de toute mon implication pour mener à bien vos projets.
-                        Bonne capacité d'adaptation de par mes experiences je vous apporterais mon sens de l'organisation et ma polyvalence
-                        """
-                        ).multilineTextAlignment(.leading)
-                            .lineLimit(8)
-                            .padding()
+                        VStack{
+                        Text("Devellopeur IOS")
+                            .font(.title)
+                        Text("en alternance")
+                            .font(.title)
+                        }.padding()
                             
                         Spacer()
                     }).foregroundColor(.white)

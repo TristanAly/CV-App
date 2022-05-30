@@ -29,7 +29,7 @@ struct Skills: View {
                 }
                 .listStyle(InsetListStyle())
                 
-                .navigationBarTitle(searchText ? "Searching" : "Mes Competences")
+                .navigationBarTitle(searchText ? "Rechercher" : "Mes Competences")
                 .toolbar {
                     if searchText {
                         Button("Cancel") {
@@ -61,8 +61,8 @@ struct SearchBar: View {
     
     var body: some View {
         ZStack{
-            RoundedRectangle(cornerRadius: 10)
-                .fill(.gray.opacity(0.2))
+            RoundedRectangle(cornerRadius: 12)
+                .fill(.blue.opacity(0.4))
                 .frame(width: 380, height: 40)
             
             HStack{
@@ -81,6 +81,7 @@ struct SearchBar: View {
                 }
                 .padding()
             }.padding()
+                .foregroundColor(.black)
             
         }
     }

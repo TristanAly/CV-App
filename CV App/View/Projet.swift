@@ -9,7 +9,37 @@ import SwiftUI
 
 struct Projet: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Color.blue.opacity(0.4)
+                .edgesIgnoringSafeArea(.all)
+        ScrollView{
+        VStack{
+            Text("Projet 1")
+            Text("Lorem ipsumAutodidacte et passionnée, je recherche une alternance de 2 ans. Motivé, curieux je ferais preuve de toute mon implication pour mener à bien vos projets.")
+            HStack{
+            Image("profil").resizable()
+                .frame(width: 150, height: 150)
+                Image("profil").resizable()
+                    .frame(width: 150, height: 150)
+            }
+            Divider()
+            Text("Projet 2")
+            Text("Lorem ipsumAutodidacte et passionnée, je recherche une alternance de 2 ans. Motivé, curieux je ferais preuve de toute mon implication pour mener à bien vos projets.")
+            HStack{
+            Image("profil").resizable()
+                .frame(width: 150, height: 150)
+                Image("profil").resizable()
+                    .frame(width: 150, height: 150)
+            }
+            Divider()
+            
+            
+            Text("Projet 1")
+            Text("Lorem ipsumAutodidacte et passionnée, je recherche une alternance de 2 ans. Motivé, curieux je ferais preuve de toute mon implication pour mener à bien vos projets.")
+            
+        }.padding()
+        }
+        }
     }
 }
 
