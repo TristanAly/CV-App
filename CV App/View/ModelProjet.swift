@@ -23,6 +23,9 @@ struct ModelProjet: View {
                 Image(contenus.image2).resizable()
                     .frame(width: 105, height: 210)
                     .shadow(color: .black, radius: 5, x: 1, y: 2)
+                Image(contenus.image3).resizable()
+                    .frame(width: 105, height: 210)
+                    .shadow(color: .black, radius: 5, x: 1, y: 2)
             }
                 
             Text(contenus.description)

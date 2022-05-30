@@ -43,13 +43,13 @@ struct Project {
     var description: String
     var image: String
     var image2: String
+    var image3: String
 }
 
-let contenu = [Project(title: "Une appli Méteo", description: "Une application de méteo, au design sombre est statique. J'utilise APIWeather pour les température en tant réel; Mon premier application avec un api ", image: "weather", image2: "weather1"),
-               Project(title: "Crypto App", description: "Une application de crypto avec des graphiques, mis en place grâce à GeometryReader. Le prix change egalement lorsque l'ont achete ou vend nos cryptos", image: "crypto", image2: "crypto1"),
-               Project(title: "Weather APP", description: "Une application meteo sans API, premiere utilisation de SpiritKit", image: "weather2", image2: ""),
-               Project(title: "Timer", description: "Une timer avec la complexité du bouton centrale, qui rempli les bords d'une couleur grace a progress", image: "github", image2: "linkedin"),
-               Project(title: "To Do APP", description: "Une application de To do app un peu particulier c'est le design complexe que je voulais m'entrainer à faire design trouvez sur Dribble", image: "github", image2: "linkedin"),
-               Project(title: "Sky APP design", description: "Une application de voyage, un design trouvez sur Dribble que j'ai voulu mettre en place.", image: "github", image2: "linkedin"),
-               Project(title: "GameBoy Color", description: "Une GameColor reproduit dans un iphone, le rendu est magnifique et la nostalgie est présente, plus une animation du jeu zelda qui se met en route", image: "gameboy", image2: "gameboy1"),
+let contenu = [Project(title: "Une appli Méteo", description: "Une application de méteo, au design sombre est statique. J'utilise APIWeather pour les température en tant réel; Mon premier application avec un api ", image: "weather", image2: "weather1",image3: ""),
+               Project(title: "Crypto App", description: "Une application de crypto avec des graphiques, mis en place grâce à GeometryReader. Le prix change egalement lorsque l'ont achete ou vend nos cryptos", image: "crypto", image2: "crypto1",image3: ""),
+               Project(title: "Weather APP", description: "Une application meteo sans API, premiere utilisation de SpiritKit", image: "weather2", image2: "",image3: ""),
+               Project(title: "Timer", description: "Une timer avec la complexité du bouton centrale, qui rempli les bords d'une couleur grace a progress", image: "timer", image2: "timer1",image3: ""),
+               Project(title: "Sky APP design", description: "Une application de voyage, un design trouvez sur Dribble que j'ai voulu mettre en place.", image: "sky", image2: "sky1",image3: "sky2"),
+               Project(title: "GameBoy Color", description: "Une GameColor reproduit dans un iphone, le rendu est magnifique et la nostalgie est présente, plus une animation du jeu zelda qui se met en route", image: "gameboy", image2: "gameboy1",image3: ""),
 ]

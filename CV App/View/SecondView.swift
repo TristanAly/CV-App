@@ -52,7 +52,7 @@ Motivé, curieux je ferais preuve de toute mon implication pour mener à bien vo
                             .fill(.blue.opacity(0.4))
                             .frame(width: 350, height: 70)
                             .overlay(
-                        Text( "Mon PortFolio")
+                        Text( "Réalisation")
                             .font(.title)
                             .foregroundColor(.black))
                     }
