@@ -31,7 +31,7 @@ struct Home: View {
                             .font(.system(size: 30,weight: .bold))
                             .padding()
                         VStack{
-                        Text("Devellopeur IOS")
+                        Text("Developeur IOS")
                             .font(.title)
                         Text("en alternance")
                             .font(.title)
